@@ -28,7 +28,7 @@ public class OrchestrationServiceApiApplication {
 		EmployeeVO employeeDtl = getEmployeeDtl(employeeId);
 		if(employeeDtl==null) {
 			return new ResponseEntity<Object>("EmployeeId is not available in "
-					+ "Organization Database",HttpStatus.NOT_FOUND);
+					+ "Organization Databases",HttpStatus.NOT_FOUND);
 		}
 		return new ResponseEntity<Object>(employeeDtl,HttpStatus.OK);
 	}
